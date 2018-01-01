@@ -8,3 +8,12 @@ FsFic_2p_migrate2x_travis.txt
 -
 DsDf_2p_travis.txt
 DsFic_2p_travis.txt
+
+__
+
+DsEdxMaster_1p_travis.txt
+DsEdxMaster_1p_vm.txt
+DsGink_1p_travis.txt
+FsEdxMaster_1p_travis.txt
+FsEdxMaster_1p_vm.txt
+FsGink_1p_travis.txt
