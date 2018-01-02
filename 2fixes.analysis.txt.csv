@@ -1,21 +1,23 @@
-,,,,
-,,enable mongo,Install rabbit package,using
-,,Unable to enable service mongod:,FAILED.*rabbitmq.*delta,
-,FsDf_6p_migrate2x_vm.txt,f,f,gdebi
-,DsDf_4p_vm.txt,f,f,gdebi
-,FsGink_2p_migrate2x_vm.txt,f,p,
-,DsGink_2p_vm.txt,f,p,
-,,,,
-,FsDf_2p_migrate2x_travis.txt,p,p,gdebi
-,FsFic_2p_migrate2x_travis.txt,p,p,gdebi
-,,,,
-,DsDf_2p_travis.txt,p,p,gdebi
-,DsFic_2p_travis.txt,p,p,gdebi
-,,,,
-,,,,
-,DsEdxMaster_1p_travis.txt,,p,
-,DsEdxMaster_1p_vm.txt,,p,
-,DsGink_1p_travis.txt,p,p,
-,FsEdxMaster_1p_travis.txt,,p,
-,FsEdxMaster_1p_vm.txt,,p,
-,FsGink_1p_travis.txt,p,p,
+,1,2,,3 4,5
+,enable mongo,Install rabbit package,using,Start rabbit nodes,edxapp : install python requirements
+,Unable to enable service mongod:,FAILED.*rabbitmq.*delta,,Unable to start service rabbitmq,
+FsDf_6p_migrate2x_vm.txt,f,f,gdebi,f,*_5.txt
+DsDf_4p_vm.txt,f,f,gdebi,p,p
+FsGink_2p_migrate2x_vm.txt,f,p,,p,p
+DsGink_2p_vm.txt,f,p,,p,p
+,,,,,
+FsDf_2p_migrate2x_travis.txt,p,p,gdebi,p,p
+FsFic_2p_migrate2x_travis.txt,p,p,gdebi,p,p
+,,,,,
+DsDf_2p_travis.txt,p,p,gdebi,p,p
+DsFic_2p_travis.txt,p,p,gdebi,p,p
+,,,,,
+,,,,,
+DsEdxMaster_1p_travis.txt,,p,,p,p
+DsEdxMaster_1p_vm.txt,,p,,p,p
+DsGink_1p_travis.txt,p,p,,p,p
+FsEdxMaster_1p_travis.txt,,p,,p,p
+FsEdxMaster_1p_vm.txt,,p,,p,p
+FsGink_1p_travis.txt,p,p,,p,p
+,,,,,
+,4,2,,2,1

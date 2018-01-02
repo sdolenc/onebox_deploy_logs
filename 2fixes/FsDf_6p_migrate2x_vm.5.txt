@@ -1,0 +1,394 @@
+failed: [localhost](item = {
+		'_ansible_parsed': True,
+		u 'stat': {
+			u 'uid': 1004,
+			u 'exists': True,
+			u 'woth': False,
+			u 'mtime': 1514148232.7110407,
+			u 'inode': 3941664,
+			u 'isgid': False,
+			u 'size': 5435,
+			u 'executable': False,
+			u 'roth': True,
+			u 'isuid': False,
+			u 'readable': True,
+			u 'isreg': True,
+			u 'pw_name': u 'edxapp',
+			u 'gid': 1005,
+			u 'ischr': False,
+			u 'wusr': True,
+			u 'writeable': True,
+			u 'xoth': False,
+			u 'islnk': False,
+			u 'nlink': 1,
+			u 'issock': False,
+			u 'rgrp': True,
+			u 'gr_name': u 'edxapp',
+			u 'path': u '/edx/app/edxapp/edx-platform/requirements/edx/github.txt',
+			u 'xusr': False,
+			u 'atime': 1514148232.7110407,
+			u 'md5': u 'a95b574eb9a880a6db32807bbda826a4',
+			u 'isdir': False,
+			u 'ctime': 1514148232.7110407,
+			u 'isblk': False,
+			u 'xgrp': False,
+			u 'dev': 2049,
+			u 'wgrp': False,
+			u 'isfifo': False,
+			u 'mode': u '0644',
+			u 'checksum': u 'af1e943ab3da967ed3fa3b85419df19f4bc81960',
+			u 'rusr': True
+		},
+		'_ansible_item_result': True,
+		'_ansible_no_log': False,
+		u 'changed': False,
+		'item': u '/edx/app/edxapp/edx-platform/requirements/edx/github.txt',
+		'invocation': {
+			'module_name': u 'stat',
+			u 'module_args': {
+				u 'checksum_algorithm': u 'sha1',
+				u 'mime': False,
+				u 'get_checksum': True,
+				u 'follow': False,
+				u 'path': u '/edx/app/edxapp/edx-platform/requirements/edx/github.txt',
+				u 'get_md5': True
+			}
+		}
+	}) => {
+	"changed": true,
+	"cmd": ["/edx/app/edxapp/venvs/edxapp/bin/pip", "install", "-i", "https://pypi.python.org/simple", "--exists-action", "w", "-r", "/edx/app/edxapp/edx-platform/requirements/edx/github.txt"],
+	"delta": "0:01:15.841470",
+	"end": "2017-12-24 12:45:30.527415",
+	"failed": true,
+	"item": {
+		"changed": false,
+		"invocation": {
+			"module_args": {
+				"checksum_algorithm": "sha1",
+				"follow": false,
+				"get_checksum": true,
+				"get_md5": true,
+				"mime": false,
+				"path": "/edx/app/edxapp/edx-platform/requirements/edx/github.txt"
+			},
+			"module_name": "stat"
+		},
+		"item": "/edx/app/edxapp/edx-platform/requirements/edx/github.txt",
+		"stat": {
+			"atime": 1514148232.7110407,
+			"checksum": "af1e943ab3da967ed3fa3b85419df19f4bc81960",
+			"ctime": 1514148232.7110407,
+			"dev": 2049,
+			"executable": false,
+			"exists": true,
+			"gid": 1005,
+			"gr_name": "edxapp",
+			"inode": 3941664,
+			"isblk": false,
+			"ischr": false,
+			"isdir": false,
+			"isfifo": false,
+			"isgid": false,
+			"islnk": false,
+			"isreg": true,
+			"issock": false,
+			"isuid": false,
+			"md5": "a95b574eb9a880a6db32807bbda826a4",
+			"mode": "0644",
+			"mtime": 1514148232.7110407,
+			"nlink": 1,
+			"path": "/edx/app/edxapp/edx-platform/requirements/edx/github.txt",
+			"pw_name": "edxapp",
+			"readable": true,
+			"rgrp": true,
+			"roth": true,
+			"rusr": true,
+			"size": 5435,
+			"uid": 1004,
+			"wgrp": false,
+			"woth": false,
+			"writeable": true,
+			"wusr": true,
+			"xgrp": false,
+			"xoth": false,
+			"xusr": false
+		}
+	},
+	"rc": 1,
+	"start": "2017-12-24 12:44:14.685945",
+	"stderr": "  Could not find a tag or branch '25b99097615bda06bd7cdfe5669ed80dc2a7fed0', assuming commit.
+  Could not find a tag or branch '776973740bdaad83a3b029f96e415a7d1e8bec2f', assuming commit.
+  Could not find a tag or branch '95e69341cebf5a6a9fbf7c4f5439d458898bdc3b', assuming commit.
+  Could not find a tag or branch '690dbf75441fa91c7c4899df0b83d77f7deb5458', assuming commit.
+  Could not find a tag or branch '7949b9f754d1445eff8e8f20d0e967b9a6420639', assuming commit.
+  Could not find a tag or branch '96e1922348bfe6d99201b9512a9ed946c87b7e0b', assuming commit.
+  Could not find a tag or branch 'b0686a76f1ce3532088c4aee6e76b9abe61cc808', assuming commit.
+  Could not find a tag or branch 'a320d43ce6b9c93b17636b2491f724d9e433be47', assuming commit.
+  Requested codejail==0.0 from git+https://github.com/edx/codejail.git@a320d43ce6b9c93b17636b2491f724d9e433be47#egg=codejail==0.0 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 75)), but installing version None
+  Could not find a tag or branch 'e46f9cda8a03e121a00c7e347084d142d22ebfb7', assuming commit.
+  Could not find a tag or branch '518605f0a95190949fe77bd39158450639e2e1dc', assuming commit.
+  Could not find a tag or branch '367e19c0f6eac8a5f002fd0f1559555f8e74bfff', assuming commit.
+  Could not find a tag or branch '138e6fa0bf3a2013e904a085b9fed77dab7f3f21', assuming commit.
+  Could not find a tag or branch '172a90fd2738f8142c10478356b2d9ed3e55334a', assuming commit.
+Command \"python setup.py egg_info\" failed with error code 1 in /tmp/pip-build-vJtfT0/Django/",
+	"stdout": "Collecting django-pipeline==1.5.3 from git+https://github.com/cyberdelia/django-pipeline.git@1.5.3#egg=django-pipeline==1.5.3 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 49))
+  Cloning https://github.com/cyberdelia/django-pipeline.git (to 1.5.3) to /tmp/pip-build-vJtfT0/django-pipeline
+Collecting django-wiki==0.0.9 from git+https://github.com/edx/django-wiki.git@v0.0.9#egg=django-wiki==0.0.9 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 50))
+  Cloning https://github.com/edx/django-wiki.git (to v0.0.9) to /tmp/pip-build-vJtfT0/django-wiki
+Collecting django-openid-auth==0.8 from git+https://github.com/edx/django-openid-auth.git@0.8#egg=django-openid-auth==0.8 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 51))
+  Cloning https://github.com/edx/django-openid-auth.git (to 0.8) to /tmp/pip-build-vJtfT0/django-openid-auth
+Collecting MongoDBProxy==0.1.0 from git+https://github.com/edx/MongoDBProxy.git@25b99097615bda06bd7cdfe5669ed80dc2a7fed0#egg=MongoDBProxy==0.1.0 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 52))
+  Cloning https://github.com/edx/MongoDBProxy.git (to 25b99097615bda06bd7cdfe5669ed80dc2a7fed0) to /tmp/pip-build-vJtfT0/MongoDBProxy
+Collecting nltk==2.0.6 from git+https://github.com/edx/nltk.git@2.0.6#egg=nltk==2.0.6 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 53))
+  Cloning https://github.com/edx/nltk.git (to 2.0.6) to /tmp/pip-build-vJtfT0/nltk
+Obtaining pystache_custom from git+https://github.com/dementrock/pystache_custom.git@776973740bdaad83a3b029f96e415a7d1e8bec2f#egg=pystache_custom-dev (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 54))
+  Cloning https://github.com/dementrock/pystache_custom.git (to 776973740bdaad83a3b029f96e415a7d1e8bec2f) to /edx/app/edxapp/venvs/edxapp/src/pystache-custom
+Obtaining pygeoip from git+https://github.com/appliedsec/pygeoip.git@95e69341cebf5a6a9fbf7c4f5439d458898bdc3b#egg=pygeoip (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 55))
+  Cloning https://github.com/appliedsec/pygeoip.git (to 95e69341cebf5a6a9fbf7c4f5439d458898bdc3b) to /edx/app/edxapp/venvs/edxapp/src/pygeoip
+Obtaining edx-jsme from git+https://github.com/jazkarta/edx-jsme.git@690dbf75441fa91c7c4899df0b83d77f7deb5458#egg=edx-jsme (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 56))
+  Cloning https://github.com/jazkarta/edx-jsme.git (to 690dbf75441fa91c7c4899df0b83d77f7deb5458) to /edx/app/edxapp/venvs/edxapp/src/edx-jsme
+Collecting django-pyfs==1.0.3 from git+https://github.com/edx/django-pyfs.git@1.0.3#egg=django-pyfs==1.0.3 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 57))
+  Cloning https://github.com/edx/django-pyfs.git (to 1.0.3) to /tmp/pip-build-vJtfT0/django-pyfs
+Collecting django-cas==2.1.1 from git+https://github.com/mitodl/django-cas.git@v2.1.1#egg=django-cas==2.1.1 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 58))
+  Cloning https://github.com/mitodl/django-cas.git (to v2.1.1) to /tmp/pip-build-vJtfT0/django-cas
+Obtaining parse_rest from git+https://github.com/dgrtwo/ParsePy.git@7949b9f754d1445eff8e8f20d0e967b9a6420639#egg=parse_rest (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 59))
+  Cloning https://github.com/dgrtwo/ParsePy.git (to 7949b9f754d1445eff8e8f20d0e967b9a6420639) to /edx/app/edxapp/venvs/edxapp/src/parse-rest
+Collecting fs==0.4.0 from git+https://github.com/pmitros/pyfs.git@96e1922348bfe6d99201b9512a9ed946c87b7e0b#egg=fs==0.4.0 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 63))
+  Cloning https://github.com/pmitros/pyfs.git (to 96e1922348bfe6d99201b9512a9ed946c87b7e0b) to /tmp/pip-build-vJtfT0/fs
+Collecting django-debug-toolbar-mongo==0.1.10 from git+https://github.com/hmarr/django-debug-toolbar-mongo.git@b0686a76f1ce3532088c4aee6e76b9abe61cc808#egg=django-debug-toolbar-mongo==0.1.10 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 65))
+  Cloning https://github.com/hmarr/django-debug-toolbar-mongo.git (to b0686a76f1ce3532088c4aee6e76b9abe61cc808) to /tmp/pip-build-vJtfT0/django-debug-toolbar-mongo
+Collecting rfc6266==0.0.5-edx from git+https://github.com/edx/rfc6266.git@v0.0.5-edx#egg=rfc6266==0.0.5-edx (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 68))
+  Cloning https://github.com/edx/rfc6266.git (to v0.0.5-edx) to /tmp/pip-build-vJtfT0/rfc6266
+Collecting lettuce==0.2.20.002 from git+https://github.com/edx/lettuce.git@0.2.20.002#egg=lettuce==0.2.20.002 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 71))
+  Cloning https://github.com/edx/lettuce.git (to 0.2.20.002) to /tmp/pip-build-vJtfT0/lettuce
+Collecting XBlock==0.4.13 from git+https://github.com/edx/XBlock.git@xblock-0.4.13#egg=XBlock==0.4.13 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 74))
+  Cloning https://github.com/edx/XBlock.git (to xblock-0.4.13) to /tmp/pip-build-vJtfT0/XBlock
+Obtaining codejail==0.0 from git+https://github.com/edx/codejail.git@a320d43ce6b9c93b17636b2491f724d9e433be47#egg=codejail==0.0 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 75))
+  Cloning https://github.com/edx/codejail.git (to a320d43ce6b9c93b17636b2491f724d9e433be47) to /edx/app/edxapp/venvs/edxapp/src/codejail
+Obtaining event-tracking==0.2.1 from git+https://github.com/edx/event-tracking.git@0.2.1#egg=event-tracking==0.2.1 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 76))
+  Cloning https://github.com/edx/event-tracking.git (to 0.2.1) to /edx/app/edxapp/venvs/edxapp/src/event-tracking
+Obtaining django-splash==0.2 from git+https://github.com/edx/django-splash.git@v0.2#egg=django-splash==0.2 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 77))
+  Cloning https://github.com/edx/django-splash.git (to v0.2) to /edx/app/edxapp/venvs/edxapp/src/django-splash
+Obtaining acid-xblock from git+https://github.com/edx/acid-block.git@e46f9cda8a03e121a00c7e347084d142d22ebfb7#egg=acid-xblock (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 78))
+  Cloning https://github.com/edx/acid-block.git (to e46f9cda8a03e121a00c7e347084d142d22ebfb7) to /edx/app/edxapp/venvs/edxapp/src/acid-xblock
+Collecting ora2==1.1.13 from git+https://github.com/edx/edx-ora2.git@1.1.13#egg=ora2==1.1.13 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 79))
+  Cloning https://github.com/edx/edx-ora2.git (to 1.1.13) to /tmp/pip-build-vJtfT0/ora2
+Obtaining edx-submissions==1.1.4 from git+https://github.com/edx/edx-submissions.git@1.1.4#egg=edx-submissions==1.1.4 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 80))
+  Cloning https://github.com/edx/edx-submissions.git (to 1.1.4) to /edx/app/edxapp/venvs/edxapp/src/edx-submissions
+Collecting ease==0.1.3 from git+https://github.com/edx/ease.git@release-2015-07-14#egg=ease==0.1.3 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 81))
+  Cloning https://github.com/edx/ease.git (to release-2015-07-14) to /tmp/pip-build-vJtfT0/ease
+Collecting edxval==0.0.12 from git+https://github.com/edx/edx-val.git@0.0.12#egg=edxval==0.0.12 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 82))
+  Cloning https://github.com/edx/edx-val.git (to 0.0.12) to /tmp/pip-build-vJtfT0/edxval
+Collecting recommender-xblock==1.1 from git+https://github.com/pmitros/RecommenderXBlock.git@v1.1#egg=recommender-xblock==1.1 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 83))
+  Cloning https://github.com/pmitros/RecommenderXBlock.git (to v1.1) to /tmp/pip-build-vJtfT0/recommender-xblock
+Collecting crowdsourcehinter-xblock==0.1 from git+https://github.com/solashirai/crowdsourcehinter.git@518605f0a95190949fe77bd39158450639e2e1dc#egg=crowdsourcehinter-xblock==0.1 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 84))
+  Cloning https://github.com/solashirai/crowdsourcehinter.git (to 518605f0a95190949fe77bd39158450639e2e1dc) to /tmp/pip-build-vJtfT0/crowdsourcehinter-xblock
+Obtaining rate-xblock from git+https://github.com/pmitros/RateXBlock.git@367e19c0f6eac8a5f002fd0f1559555f8e74bfff#egg=rate-xblock (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 85))
+  Cloning https://github.com/pmitros/RateXBlock.git (to 367e19c0f6eac8a5f002fd0f1559555f8e74bfff) to /edx/app/edxapp/venvs/edxapp/src/rate-xblock
+Obtaining done-xblock from git+https://github.com/pmitros/DoneXBlock.git@release-2016-08-10#egg=done-xblock (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 86))
+  Cloning https://github.com/pmitros/DoneXBlock.git (to release-2016-08-10) to /edx/app/edxapp/venvs/edxapp/src/done-xblock
+Collecting edx-milestones==0.1.10 from git+https://github.com/edx/edx-milestones.git@v0.1.10#egg=edx-milestones==0.1.10 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 87))
+  Cloning https://github.com/edx/edx-milestones.git (to v0.1.10) to /tmp/pip-build-vJtfT0/edx-milestones
+Collecting xblock-utils==1.0.3 from git+https://github.com/edx/xblock-utils.git@v1.0.3#egg=xblock-utils==1.0.3 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 88))
+  Cloning https://github.com/edx/xblock-utils.git (to v1.0.3) to /tmp/pip-build-vJtfT0/xblock-utils
+Obtaining xblock-google-drive from git+https://github.com/edx-solutions/xblock-google-drive.git@138e6fa0bf3a2013e904a085b9fed77dab7f3f21#egg=xblock-google-drive (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 89))
+  Cloning https://github.com/edx-solutions/xblock-google-drive.git (to 138e6fa0bf3a2013e904a085b9fed77dab7f3f21) to /edx/app/edxapp/venvs/edxapp/src/xblock-google-drive
+Obtaining edx-reverification-block==0.0.5 from git+https://github.com/edx/edx-reverification-block.git@0.0.5#egg=edx-reverification-block==0.0.5 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 90))
+  Cloning https://github.com/edx/edx-reverification-block.git (to 0.0.5) to /edx/app/edxapp/venvs/edxapp/src/edx-reverification-block
+Collecting edx-user-state-client==1.0.1 from git+https://github.com/edx/edx-user-state-client.git@1.0.1#egg=edx-user-state-client==1.0.1 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 91))
+  Cloning https://github.com/edx/edx-user-state-client.git (to 1.0.1) to /tmp/pip-build-vJtfT0/edx-user-state-client
+Collecting lti_consumer-xblock==1.1.1 from git+https://github.com/edx/xblock-lti-consumer.git@v1.1.1#egg=lti_consumer-xblock==1.1.1 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 92))
+  Cloning https://github.com/edx/xblock-lti-consumer.git (to v1.1.1) to /tmp/pip-build-vJtfT0/lti-consumer-xblock
+Collecting edx-proctoring==0.17.0 from git+https://github.com/edx/edx-proctoring.git@0.17.0#egg=edx-proctoring==0.17.0 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 93))
+  Cloning https://github.com/edx/edx-proctoring.git (to 0.17.0) to /tmp/pip-build-vJtfT0/edx-proctoring
+Obtaining edx-sga from git+https://github.com/mitodl/edx-sga@172a90fd2738f8142c10478356b2d9ed3e55334a#egg=edx-sga (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 96))
+  Cloning https://github.com/mitodl/edx-sga (to 172a90fd2738f8142c10478356b2d9ed3e55334a) to /edx/app/edxapp/venvs/edxapp/src/edx-sga
+Obtaining xblock-poll==1.2.3 from git+https://github.com/open-craft/xblock-poll@v1.2.3#egg=xblock-poll==1.2.3 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 97))
+  Cloning https://github.com/open-craft/xblock-poll (to v1.2.3) to /edx/app/edxapp/venvs/edxapp/src/xblock-poll
+Collecting xblock-drag-and-drop-v2==2.0.15 from git+https://github.com/edx-solutions/xblock-drag-and-drop-v2@v2.0.15#egg=xblock-drag-and-drop-v2==2.0.15 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 98))
+  Cloning https://github.com/edx-solutions/xblock-drag-and-drop-v2 (to v2.0.15) to /tmp/pip-build-vJtfT0/xblock-drag-and-drop-v2
+Collecting futures>=2.1.3 (from django-pipeline==1.5.3->-r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 49))
+  Downloading futures-3.2.0-py2-none-any.whl
+Collecting Django>=1.4 (from django-wiki==0.0.9->-r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 50))
+  Downloading Django-2.0.tar.gz (8.0MB)
+    Complete output from command python setup.py egg_info:
+    Traceback (most recent call last):
+      File \"<string>\", line 1, in <module>
+      File \"/tmp/pip-build-vJtfT0/Django/setup.py\", line 32, in <module>
+        version = __import__('django').get_version()
+      File \"django/__init__.py\", line 1, in <module>
+        from django.utils.version import get_version
+      File \"django/utils/version.py\", line 61, in <module>
+        @functools.lru_cache()
+    AttributeError: 'module' object has no attribute 'lru_cache'
+    
+    ----------------------------------------",
+	"stdout_lines": ["Collecting django-pipeline==1.5.3 from git+https://github.com/cyberdelia/django-pipeline.git@1.5.3#egg=django-pipeline==1.5.3 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 49))", "  Cloning https://github.com/cyberdelia/django-pipeline.git (to 1.5.3) to /tmp/pip-build-vJtfT0/django-pipeline", "Collecting django-wiki==0.0.9 from git+https://github.com/edx/django-wiki.git@v0.0.9#egg=django-wiki==0.0.9 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 50))", "  Cloning https://github.com/edx/django-wiki.git (to v0.0.9) to /tmp/pip-build-vJtfT0/django-wiki", "Collecting django-openid-auth==0.8 from git+https://github.com/edx/django-openid-auth.git@0.8#egg=django-openid-auth==0.8 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 51))", "  Cloning https://github.com/edx/django-openid-auth.git (to 0.8) to /tmp/pip-build-vJtfT0/django-openid-auth", "Collecting MongoDBProxy==0.1.0 from git+https://github.com/edx/MongoDBProxy.git@25b99097615bda06bd7cdfe5669ed80dc2a7fed0#egg=MongoDBProxy==0.1.0 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 52))", "  Cloning https://github.com/edx/MongoDBProxy.git (to 25b99097615bda06bd7cdfe5669ed80dc2a7fed0) to /tmp/pip-build-vJtfT0/MongoDBProxy", "Collecting nltk==2.0.6 from git+https://github.com/edx/nltk.git@2.0.6#egg=nltk==2.0.6 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 53))", "  Cloning https://github.com/edx/nltk.git (to 2.0.6) to /tmp/pip-build-vJtfT0/nltk", "Obtaining pystache_custom from git+https://github.com/dementrock/pystache_custom.git@776973740bdaad83a3b029f96e415a7d1e8bec2f#egg=pystache_custom-dev (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 54))", "  Cloning https://github.com/dementrock/pystache_custom.git (to 776973740bdaad83a3b029f96e415a7d1e8bec2f) to /edx/app/edxapp/venvs/edxapp/src/pystache-custom", "Obtaining pygeoip from git+https://github.com/appliedsec/pygeoip.git@95e69341cebf5a6a9fbf7c4f5439d458898bdc3b#egg=pygeoip (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 55))", "  Cloning https://github.com/appliedsec/pygeoip.git (to 95e69341cebf5a6a9fbf7c4f5439d458898bdc3b) to /edx/app/edxapp/venvs/edxapp/src/pygeoip", "Obtaining edx-jsme from git+https://github.com/jazkarta/edx-jsme.git@690dbf75441fa91c7c4899df0b83d77f7deb5458#egg=edx-jsme (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 56))", "  Cloning https://github.com/jazkarta/edx-jsme.git (to 690dbf75441fa91c7c4899df0b83d77f7deb5458) to /edx/app/edxapp/venvs/edxapp/src/edx-jsme", "Collecting django-pyfs==1.0.3 from git+https://github.com/edx/django-pyfs.git@1.0.3#egg=django-pyfs==1.0.3 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 57))", "  Cloning https://github.com/edx/django-pyfs.git (to 1.0.3) to /tmp/pip-build-vJtfT0/django-pyfs", "Collecting django-cas==2.1.1 from git+https://github.com/mitodl/django-cas.git@v2.1.1#egg=django-cas==2.1.1 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 58))", "  Cloning https://github.com/mitodl/django-cas.git (to v2.1.1) to /tmp/pip-build-vJtfT0/django-cas", "Obtaining parse_rest from git+https://github.com/dgrtwo/ParsePy.git@7949b9f754d1445eff8e8f20d0e967b9a6420639#egg=parse_rest (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 59))", "  Cloning https://github.com/dgrtwo/ParsePy.git (to 7949b9f754d1445eff8e8f20d0e967b9a6420639) to /edx/app/edxapp/venvs/edxapp/src/parse-rest", "Collecting fs==0.4.0 from git+https://github.com/pmitros/pyfs.git@96e1922348bfe6d99201b9512a9ed946c87b7e0b#egg=fs==0.4.0 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 63))", "  Cloning https://github.com/pmitros/pyfs.git (to 96e1922348bfe6d99201b9512a9ed946c87b7e0b) to /tmp/pip-build-vJtfT0/fs", "Collecting django-debug-toolbar-mongo==0.1.10 from git+https://github.com/hmarr/django-debug-toolbar-mongo.git@b0686a76f1ce3532088c4aee6e76b9abe61cc808#egg=django-debug-toolbar-mongo==0.1.10 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 65))", "  Cloning https://github.com/hmarr/django-debug-toolbar-mongo.git (to b0686a76f1ce3532088c4aee6e76b9abe61cc808) to /tmp/pip-build-vJtfT0/django-debug-toolbar-mongo", "Collecting rfc6266==0.0.5-edx from git+https://github.com/edx/rfc6266.git@v0.0.5-edx#egg=rfc6266==0.0.5-edx (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 68))", "  Cloning https://github.com/edx/rfc6266.git (to v0.0.5-edx) to /tmp/pip-build-vJtfT0/rfc6266", "Collecting lettuce==0.2.20.002 from git+https://github.com/edx/lettuce.git@0.2.20.002#egg=lettuce==0.2.20.002 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 71))", "  Cloning https://github.com/edx/lettuce.git (to 0.2.20.002) to /tmp/pip-build-vJtfT0/lettuce", "Collecting XBlock==0.4.13 from git+https://github.com/edx/XBlock.git@xblock-0.4.13#egg=XBlock==0.4.13 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 74))", "  Cloning https://github.com/edx/XBlock.git (to xblock-0.4.13) to /tmp/pip-build-vJtfT0/XBlock", "Obtaining codejail==0.0 from git+https://github.com/edx/codejail.git@a320d43ce6b9c93b17636b2491f724d9e433be47#egg=codejail==0.0 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 75))", "  Cloning https://github.com/edx/codejail.git (to a320d43ce6b9c93b17636b2491f724d9e433be47) to /edx/app/edxapp/venvs/edxapp/src/codejail", "Obtaining event-tracking==0.2.1 from git+https://github.com/edx/event-tracking.git@0.2.1#egg=event-tracking==0.2.1 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 76))", "  Cloning https://github.com/edx/event-tracking.git (to 0.2.1) to /edx/app/edxapp/venvs/edxapp/src/event-tracking", "Obtaining django-splash==0.2 from git+https://github.com/edx/django-splash.git@v0.2#egg=django-splash==0.2 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 77))", "  Cloning https://github.com/edx/django-splash.git (to v0.2) to /edx/app/edxapp/venvs/edxapp/src/django-splash", "Obtaining acid-xblock from git+https://github.com/edx/acid-block.git@e46f9cda8a03e121a00c7e347084d142d22ebfb7#egg=acid-xblock (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 78))", "  Cloning https://github.com/edx/acid-block.git (to e46f9cda8a03e121a00c7e347084d142d22ebfb7) to /edx/app/edxapp/venvs/edxapp/src/acid-xblock", "Collecting ora2==1.1.13 from git+https://github.com/edx/edx-ora2.git@1.1.13#egg=ora2==1.1.13 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 79))", "  Cloning https://github.com/edx/edx-ora2.git (to 1.1.13) to /tmp/pip-build-vJtfT0/ora2", "Obtaining edx-submissions==1.1.4 from git+https://github.com/edx/edx-submissions.git@1.1.4#egg=edx-submissions==1.1.4 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 80))", "  Cloning https://github.com/edx/edx-submissions.git (to 1.1.4) to /edx/app/edxapp/venvs/edxapp/src/edx-submissions", "Collecting ease==0.1.3 from git+https://github.com/edx/ease.git@release-2015-07-14#egg=ease==0.1.3 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 81))", "  Cloning https://github.com/edx/ease.git (to release-2015-07-14) to /tmp/pip-build-vJtfT0/ease", "Collecting edxval==0.0.12 from git+https://github.com/edx/edx-val.git@0.0.12#egg=edxval==0.0.12 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 82))", "  Cloning https://github.com/edx/edx-val.git (to 0.0.12) to /tmp/pip-build-vJtfT0/edxval", "Collecting recommender-xblock==1.1 from git+https://github.com/pmitros/RecommenderXBlock.git@v1.1#egg=recommender-xblock==1.1 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 83))", "  Cloning https://github.com/pmitros/RecommenderXBlock.git (to v1.1) to /tmp/pip-build-vJtfT0/recommender-xblock", "Collecting crowdsourcehinter-xblock==0.1 from git+https://github.com/solashirai/crowdsourcehinter.git@518605f0a95190949fe77bd39158450639e2e1dc#egg=crowdsourcehinter-xblock==0.1 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 84))", "  Cloning https://github.com/solashirai/crowdsourcehinter.git (to 518605f0a95190949fe77bd39158450639e2e1dc) to /tmp/pip-build-vJtfT0/crowdsourcehinter-xblock", "Obtaining rate-xblock from git+https://github.com/pmitros/RateXBlock.git@367e19c0f6eac8a5f002fd0f1559555f8e74bfff#egg=rate-xblock (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 85))", "  Cloning https://github.com/pmitros/RateXBlock.git (to 367e19c0f6eac8a5f002fd0f1559555f8e74bfff) to /edx/app/edxapp/venvs/edxapp/src/rate-xblock", "Obtaining done-xblock from git+https://github.com/pmitros/DoneXBlock.git@release-2016-08-10#egg=done-xblock (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 86))", "  Cloning https://github.com/pmitros/DoneXBlock.git (to release-2016-08-10) to /edx/app/edxapp/venvs/edxapp/src/done-xblock", "Collecting edx-milestones==0.1.10 from git+https://github.com/edx/edx-milestones.git@v0.1.10#egg=edx-milestones==0.1.10 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 87))", "  Cloning https://github.com/edx/edx-milestones.git (to v0.1.10) to /tmp/pip-build-vJtfT0/edx-milestones", "Collecting xblock-utils==1.0.3 from git+https://github.com/edx/xblock-utils.git@v1.0.3#egg=xblock-utils==1.0.3 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 88))", "  Cloning https://github.com/edx/xblock-utils.git (to v1.0.3) to /tmp/pip-build-vJtfT0/xblock-utils", "Obtaining xblock-google-drive from git+https://github.com/edx-solutions/xblock-google-drive.git@138e6fa0bf3a2013e904a085b9fed77dab7f3f21#egg=xblock-google-drive (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 89))", "  Cloning https://github.com/edx-solutions/xblock-google-drive.git (to 138e6fa0bf3a2013e904a085b9fed77dab7f3f21) to /edx/app/edxapp/venvs/edxapp/src/xblock-google-drive", "Obtaining edx-reverification-block==0.0.5 from git+https://github.com/edx/edx-reverification-block.git@0.0.5#egg=edx-reverification-block==0.0.5 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 90))", "  Cloning https://github.com/edx/edx-reverification-block.git (to 0.0.5) to /edx/app/edxapp/venvs/edxapp/src/edx-reverification-block", "Collecting edx-user-state-client==1.0.1 from git+https://github.com/edx/edx-user-state-client.git@1.0.1#egg=edx-user-state-client==1.0.1 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 91))", "  Cloning https://github.com/edx/edx-user-state-client.git (to 1.0.1) to /tmp/pip-build-vJtfT0/edx-user-state-client", "Collecting lti_consumer-xblock==1.1.1 from git+https://github.com/edx/xblock-lti-consumer.git@v1.1.1#egg=lti_consumer-xblock==1.1.1 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 92))", "  Cloning https://github.com/edx/xblock-lti-consumer.git (to v1.1.1) to /tmp/pip-build-vJtfT0/lti-consumer-xblock", "Collecting edx-proctoring==0.17.0 from git+https://github.com/edx/edx-proctoring.git@0.17.0#egg=edx-proctoring==0.17.0 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 93))", "  Cloning https://github.com/edx/edx-proctoring.git (to 0.17.0) to /tmp/pip-build-vJtfT0/edx-proctoring", "Obtaining edx-sga from git+https://github.com/mitodl/edx-sga@172a90fd2738f8142c10478356b2d9ed3e55334a#egg=edx-sga (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 96))", "  Cloning https://github.com/mitodl/edx-sga (to 172a90fd2738f8142c10478356b2d9ed3e55334a) to /edx/app/edxapp/venvs/edxapp/src/edx-sga", "Obtaining xblock-poll==1.2.3 from git+https://github.com/open-craft/xblock-poll@v1.2.3#egg=xblock-poll==1.2.3 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 97))", "  Cloning https://github.com/open-craft/xblock-poll (to v1.2.3) to /edx/app/edxapp/venvs/edxapp/src/xblock-poll", "Collecting xblock-drag-and-drop-v2==2.0.15 from git+https://github.com/edx-solutions/xblock-drag-and-drop-v2@v2.0.15#egg=xblock-drag-and-drop-v2==2.0.15 (from -r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 98))", "  Cloning https://github.com/edx-solutions/xblock-drag-and-drop-v2 (to v2.0.15) to /tmp/pip-build-vJtfT0/xblock-drag-and-drop-v2", "Collecting futures>=2.1.3 (from django-pipeline==1.5.3->-r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 49))", "  Downloading futures-3.2.0-py2-none-any.whl", "Collecting Django>=1.4 (from django-wiki==0.0.9->-r /edx/app/edxapp/edx-platform/requirements/edx/github.txt (line 50))", "  Downloading Django-2.0.tar.gz (8.0MB)", "    Complete output from command python setup.py egg_info:", "    Traceback (most recent call last):", "      File \"<string>\", line 1, in <module>", "      File \"/tmp/pip-build-vJtfT0/Django/setup.py\", line 32, in <module>", "        version = __import__('django').get_version()", "      File \"django/__init__.py\", line 1, in <module>", "        from django.utils.version import get_version", "      File \"django/utils/version.py\", line 61, in <module>", "        @functools.lru_cache()", "    AttributeError: 'module' object has no attribute 'lru_cache'", "    ", "    ----------------------------------------"],
+	"warnings": []
+}
+
+skipping: [localhost] => (item = {
+		'_ansible_parsed': True,
+		u 'stat': {
+			u 'exists': False
+		},
+		'_ansible_item_result': True,
+		'_ansible_no_log': False,
+		u 'changed': False,
+		'item': u '/edx/app/edxapp/edx-platform/requirements/edx/custom.txt',
+		'invocation': {
+			'module_name': u 'stat',
+			u 'module_args': {
+				u 'checksum_algorithm': u 'sha1',
+				u 'mime': False,
+				u 'get_checksum': True,
+				u 'follow': False,
+				u 'path': u '/edx/app/edxapp/edx-platform/requirements/edx/custom.txt',
+				u 'get_md5': True
+			}
+		}
+	})
+
+failed: [localhost](item = {
+		'_ansible_parsed': True,
+		u 'stat': {
+			u 'uid': 1004,
+			u 'exists': True,
+			u 'woth': False,
+			u 'mtime': 1514148229.3429987,
+			u 'inode': 3941660,
+			u 'isgid': False,
+			u 'size': 308,
+			u 'executable': False,
+			u 'roth': True,
+			u 'isuid': False,
+			u 'readable': True,
+			u 'isreg': True,
+			u 'pw_name': u 'edxapp',
+			u 'gid': 1005,
+			u 'ischr': False,
+			u 'wusr': True,
+			u 'writeable': True,
+			u 'xoth': False,
+			u 'islnk': False,
+			u 'nlink': 1,
+			u 'issock': False,
+			u 'rgrp': True,
+			u 'gr_name': u 'edxapp',
+			u 'path': u '/edx/app/edxapp/edx-platform/requirements/edx/local.txt',
+			u 'xusr': False,
+			u 'atime': 1514148230.1310086,
+			u 'md5': u '49992f42d7d12edb909e994ddf6cad84',
+			u 'isdir': False,
+			u 'ctime': 1514148229.3429987,
+			u 'isblk': False,
+			u 'xgrp': False,
+			u 'dev': 2049,
+			u 'wgrp': False,
+			u 'isfifo': False,
+			u 'mode': u '0644',
+			u 'checksum': u '02bb3feb152f4a130117dbc38b85ea7fb0763992',
+			u 'rusr': True
+		},
+		'_ansible_item_result': True,
+		'_ansible_no_log': False,
+		u 'changed': False,
+		'item': u '/edx/app/edxapp/edx-platform/requirements/edx/local.txt',
+		'invocation': {
+			'module_name': u 'stat',
+			u 'module_args': {
+				u 'checksum_algorithm': u 'sha1',
+				u 'mime': False,
+				u 'get_checksum': True,
+				u 'follow': False,
+				u 'path': u '/edx/app/edxapp/edx-platform/requirements/edx/local.txt',
+				u 'get_md5': True
+			}
+		}
+	}) => {
+	"changed": true,
+	"cmd": ["/edx/app/edxapp/venvs/edxapp/bin/pip", "install", "-i", "https://pypi.python.org/simple", "--exists-action", "w", "-r", "/edx/app/edxapp/edx-platform/requirements/edx/local.txt"],
+	"delta": "0:00:10.134369",
+	"end": "2017-12-24 12:45:40.810132",
+	"failed": true,
+	"item": {
+		"changed": false,
+		"invocation": {
+			"module_args": {
+				"checksum_algorithm": "sha1",
+				"follow": false,
+				"get_checksum": true,
+				"get_md5": true,
+				"mime": false,
+				"path": "/edx/app/edxapp/edx-platform/requirements/edx/local.txt"
+			},
+			"module_name": "stat"
+		},
+		"item": "/edx/app/edxapp/edx-platform/requirements/edx/local.txt",
+		"stat": {
+			"atime": 1514148230.1310086,
+			"checksum": "02bb3feb152f4a130117dbc38b85ea7fb0763992",
+			"ctime": 1514148229.3429987,
+			"dev": 2049,
+			"executable": false,
+			"exists": true,
+			"gid": 1005,
+			"gr_name": "edxapp",
+			"inode": 3941660,
+			"isblk": false,
+			"ischr": false,
+			"isdir": false,
+			"isfifo": false,
+			"isgid": false,
+			"islnk": false,
+			"isreg": true,
+			"issock": false,
+			"isuid": false,
+			"md5": "49992f42d7d12edb909e994ddf6cad84",
+			"mode": "0644",
+			"mtime": 1514148229.3429987,
+			"nlink": 1,
+			"path": "/edx/app/edxapp/edx-platform/requirements/edx/local.txt",
+			"pw_name": "edxapp",
+			"readable": true,
+			"rgrp": true,
+			"roth": true,
+			"rusr": true,
+			"size": 308,
+			"uid": 1004,
+			"wgrp": false,
+			"woth": false,
+			"writeable": true,
+			"wusr": true,
+			"xgrp": false,
+			"xoth": false,
+			"xusr": false
+		}
+	},
+	"rc": 1,
+	"start": "2017-12-24 12:45:30.675763",
+	"stderr": "  Could not find a version that satisfies the requirement nltk==2.0.6 (from chem==0.1.1->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 5)) (from versions: 2.0b8.macosx-10.5-i386, 2.0.1rc1.macosx-10.6-x86_64, 2.0.1rc2-git, 2.0b4, 2.0b5, 2.0b6, 2.0b7, 2.0b8, 2.0b9, 2.0.1rc1, 2.0.1rc3, 2.0.1rc4, 2.0.1, 2.0.2, 2.0.3, 2.0.4, 2.0.5, 3.0.0b1, 3.0.0b2, 3.0.0, 3.0.1, 3.0.2, 3.0.3, 3.0.4, 3.0.5, 3.1, 3.2, 3.2.1, 3.2.2, 3.2.3, 3.2.4, 3.2.5)
+No matching distribution found for nltk==2.0.6 (from chem==0.1.1->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 5))",
+	"stdout": "Obtaining file:///edx/app/edxapp/edx-platform (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 2))
+Obtaining file:///edx/app/edxapp/edx-platform/common/lib/calc (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 3))
+Obtaining file:///edx/app/edxapp/edx-platform/common/lib/capa (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 4))
+Obtaining file:///edx/app/edxapp/edx-platform/common/lib/chem (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 5))
+Obtaining file:///edx/app/edxapp/edx-platform/common/lib/dogstats (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 6))
+Obtaining file:///edx/app/edxapp/edx-platform/common/lib/safe_lxml (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 7))
+Obtaining file:///edx/app/edxapp/edx-platform/common/lib/sandbox-packages (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 8))
+Obtaining file:///edx/app/edxapp/edx-platform/common/lib/symmath (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 9))
+Obtaining file:///edx/app/edxapp/edx-platform/common/lib/xmodule (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 10))
+Obtaining file:///edx/app/edxapp/edx-platform/openedx/core/lib/xblock_builtin/xblock_discussion (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 12))
+Requirement already satisfied: setuptools in /edx/app/edxapp/venvs/edxapp/lib/python2.7/site-packages (from Open-edX==0.6->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 2))
+Requirement already satisfied: pyparsing==2.0.7 in /edx/app/edxapp/venvs/edxapp/lib/python2.7/site-packages (from calc==0.2->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 3))
+Requirement already satisfied: numpy==1.6.2 in /edx/app/edxapp/venvs/edxapp/lib/python2.7/site-packages (from calc==0.2->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 3))
+Collecting scipy==0.14.0 (from calc==0.2->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 3))
+  Downloading scipy-0.14.0-cp27-cp27mu-manylinux1_x86_64.whl (35.3MB)
+Collecting lxml (from capa==0.1->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 4))
+  Downloading lxml-4.1.1-cp27-cp27mu-manylinux1_x86_64.whl (5.6MB)
+Collecting pytz (from capa==0.1->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 4))
+  Downloading pytz-2017.3-py2.py3-none-any.whl (511kB)
+Collecting nltk==2.0.6 (from chem==0.1.1->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 5))",
+	"stdout_lines": ["Obtaining file:///edx/app/edxapp/edx-platform (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 2))", "Obtaining file:///edx/app/edxapp/edx-platform/common/lib/calc (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 3))", "Obtaining file:///edx/app/edxapp/edx-platform/common/lib/capa (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 4))", "Obtaining file:///edx/app/edxapp/edx-platform/common/lib/chem (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 5))", "Obtaining file:///edx/app/edxapp/edx-platform/common/lib/dogstats (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 6))", "Obtaining file:///edx/app/edxapp/edx-platform/common/lib/safe_lxml (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 7))", "Obtaining file:///edx/app/edxapp/edx-platform/common/lib/sandbox-packages (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 8))", "Obtaining file:///edx/app/edxapp/edx-platform/common/lib/symmath (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 9))", "Obtaining file:///edx/app/edxapp/edx-platform/common/lib/xmodule (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 10))", "Obtaining file:///edx/app/edxapp/edx-platform/openedx/core/lib/xblock_builtin/xblock_discussion (from -r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 12))", "Requirement already satisfied: setuptools in /edx/app/edxapp/venvs/edxapp/lib/python2.7/site-packages (from Open-edX==0.6->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 2))", "Requirement already satisfied: pyparsing==2.0.7 in /edx/app/edxapp/venvs/edxapp/lib/python2.7/site-packages (from calc==0.2->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 3))", "Requirement already satisfied: numpy==1.6.2 in /edx/app/edxapp/venvs/edxapp/lib/python2.7/site-packages (from calc==0.2->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 3))", "Collecting scipy==0.14.0 (from calc==0.2->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 3))", "  Downloading scipy-0.14.0-cp27-cp27mu-manylinux1_x86_64.whl (35.3MB)", "Collecting lxml (from capa==0.1->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 4))", "  Downloading lxml-4.1.1-cp27-cp27mu-manylinux1_x86_64.whl (5.6MB)", "Collecting pytz (from capa==0.1->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 4))", "  Downloading pytz-2017.3-py2.py3-none-any.whl (511kB)", "Collecting nltk==2.0.6 (from chem==0.1.1->-r /edx/app/edxapp/edx-platform/requirements/edx/local.txt (line 5))"],
+	"warnings": []
+}
