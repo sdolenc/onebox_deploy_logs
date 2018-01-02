@@ -1,0 +1,21 @@
+,,,,
+,,enable mongo,Install rabbit package,using
+,,Unable to enable service mongod:,FAILED.*rabbitmq.*delta,
+,FsDf_6p_migrate2x_vm.txt,f,f,gdebi
+,DsDf_4p_vm.txt,f,f,gdebi
+,FsGink_2p_migrate2x_vm.txt,f,p,
+,DsGink_2p_vm.txt,f,p,
+,,,,
+,FsDf_2p_migrate2x_travis.txt,p,p,gdebi
+,FsFic_2p_migrate2x_travis.txt,p,p,gdebi
+,,,,
+,DsDf_2p_travis.txt,p,p,gdebi
+,DsFic_2p_travis.txt,p,p,gdebi
+,,,,
+,,,,
+,DsEdxMaster_1p_travis.txt,,p,
+,DsEdxMaster_1p_vm.txt,,p,
+,DsGink_1p_travis.txt,p,p,
+,FsEdxMaster_1p_travis.txt,,p,
+,FsEdxMaster_1p_vm.txt,,p,
+,FsGink_1p_travis.txt,p,p,
